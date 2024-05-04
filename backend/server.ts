@@ -1,12 +1,11 @@
 import express, { Express, Request, Response } from "express";
+import recommendationRoutes from './recommendations/RecommendationsRoutes';
 
-class Server {
+export class Server {
     constructor(
         private app, 
         private host, 
         private port,
-        private readonly recommendationsController,
-        private readonly commentsController,
     ) {
         this.app = express()
         this.config();
@@ -19,7 +18,7 @@ class Server {
     }
 
     private routes() {
-        this.app.get('/recommendations')
+        this.app.get('/recommendations', recommendationRoutes);
     }
 
     start() {

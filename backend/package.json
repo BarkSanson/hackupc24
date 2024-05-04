@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node index.ts",
+    "start": "ts-node dist/index.ts",
     "dev": "nodemon index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
