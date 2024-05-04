@@ -1,0 +1,3 @@
+type Recommendation = {
+    text: string
+};
