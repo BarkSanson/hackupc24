@@ -1,9 +1,3 @@
-import pandas as pd
-
-#Read the .csv file provided by TravelPerk
-df = pd.read_csv('./res/hackupc-travelperk-dataset.csv')
-print(df.head())
-
 #Return a dataframe with all the trips with
 def filterByName(df, userName):
     filter = df['Traveller Name'].str.contains(userName, case=False, na=False)

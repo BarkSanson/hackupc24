@@ -2,7 +2,7 @@
 name = "trip-planner-yt"
 version = "0.1.0"
 description = "Simple ai trip planner"
-authors = ["Joao Moura, Brandon Hancock"]
+authors = ["Iftekhar Anwar, Pere Antoni Prats Villalonga, Martin Rizzo and Harol Mijael Jorge Lopez. Thanks Joao Moura for a wonderful platform."]
 
 [tool.poetry.dependencies]
 python = ">=3.10.0,<3.12"
