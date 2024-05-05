@@ -1,7 +1,7 @@
 import express, { Express, Request, Response } from "express";
 import dotenv from "dotenv";
 
-import { Server } from './server';
+import { Server } from './Server';
 
 dotenv.config();
 

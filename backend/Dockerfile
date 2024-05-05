@@ -1,12 +1,14 @@
 FROM node:20
 
-USER back
-
 WORKDIR /back
 
 COPY . .
 
-RUN npm i
-RUN npm i 
+ARG AI_HOST=localhost
+ARG AI_PORT=5000
 
-RUN npm run start
+RUN npm i
+
+EXPOSE 3000
+
+CMD ["npm", "run", "start"]

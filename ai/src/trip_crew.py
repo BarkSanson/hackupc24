@@ -1,17 +1,14 @@
 from crewai import Crew
-from textwrap import dedent
+
 from agents import TravelAgents
 from tasks import TravelTasks
-from dotenv import load_dotenv
-
-load_dotenv()
-
 
 class TripCrew:
-    def __init__(self, origin, cities, date_range, interests):
+    def __init__(self, origin, cities, estimated_departure, estimated_arrival, interests):
         self.origin = origin
         self.cities = cities
-        self.date_range = date_range
+        self.estimated_departure = estimated_departure
+        self.estimated_arrival = estimated_arrival
         self.interests = interests
 
     def run(self):
@@ -93,28 +90,3 @@ class TripCrew:
 
         result = crew.kickoff()
         return result
-
-
-# This is the main function that you will use to run your custom crew.
-if __name__ == "__main__":
-    print("## Welcome to the Trip Planner Crew!")
-    print('--------------------------------------')
-    origin = input(
-        dedent("""
-        Where will you be traveling from?
-    """))
-    cities = input(
-        dedent("""Which cities are you interested in visiting?"""))
-    estimated_departure = input(
-        dedent("""What is your estimated departure date (YYYY-MM-DD)?"""))
-    estimated_arrival = input(
-        dedent("""What is your estimated arrival date (YYYY-MM-DD)?"""))
-    interests = input(
-        dedent("""What sorts of things capture your interest and keep you occupied at a higher level?"""))
-
-    trip_crew = TripCrew(origin, cities, estimated_departure, estimated_arrival, interests)
-    result = trip_crew.run()
-    print("\n\n########################")
-    print("## Here's your trip plan.")
-    print("########################\n")
-    print(result)
