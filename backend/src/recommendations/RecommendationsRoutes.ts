@@ -7,6 +7,5 @@ const client = new AgentClient(process.env.AGENT_HOST);
 const controller = new RecommendationsController(client);
 
 router.get('/', controller.getRecommendation);
-//router.post('/', /*TODO*/() => {});
 
 export default router;

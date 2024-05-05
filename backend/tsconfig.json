@@ -8,9 +8,9 @@
       "removeComments": true,
       "preserveConstEnums": true,
       "sourceMap": true,
-      "outDir": "./dist"
+      "outDir": "./dist",
     },
-    "files": [
-        "index.ts"
+    "include": [
+        "src/index.ts"
     ]
   }
