@@ -19,7 +19,3 @@ def getTravelers(date, city):
     locFilter = dateFiltered[city.lower() == dateFiltered['Arrival City'].str.lower()]
     
     return locFilter.to_json(orient='records', lines=True)
-            
-        
-with open('travels.json', 'w') as file:
-    file.write(getTravelers('17/06/2024', 'Barcelona'))
