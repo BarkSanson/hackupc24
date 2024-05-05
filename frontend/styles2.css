@@ -1,0 +1,60 @@
+#logo{
+    width: 300x;
+    height: auto;
+}ç
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura completa de la vista del navegador */
+}
+
+form {
+    background-color: #fff;
+    padding: 40px; /* Aumentamos el padding para dar más espacio dentro del formulario */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 50%; /* Hacemos que el formulario ocupe el 50% del ancho de la pantalla */
+    max-width: 600px; /* Establecemos un máximo para que no se vuelva demasiado grande en pantallas anchas */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Espacio entre los campos del formulario */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px; /* Espacio entre la etiqueta y el campo de entrada */
+}
+
+input[type="text"],
+input[type="date"],
+input[type="submit"],
+textarea {
+    width: 100%; /* Los campos ocupan todo el ancho disponible del formulario */
+    padding: 10px; /* Mayor padding para mayor comodidad al teclear */
+    box-sizing: border-box; /* El ancho incluye el padding y el borde */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Un tono más oscuro para el hover */
+}
+
+textarea {
+    height: 100px; /* Tamaño inicial para el área de texto */
+    resize: vertical; /* Permite al usuario ajustar la altura del área de texto */
+}
