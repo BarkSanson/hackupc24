@@ -1,36 +1,3 @@
-
-
-"""
-Creating Agents Cheat Sheet:
-- Think like a boss. Work backwards from the goal and think which employee 
-    you need to hire to get the job done.
-- Define the Captain of the crew who orient the other agents towards the goal. 
-- Define which experts the captain needs to communicate with and delegate tasks to.
-    Build a top down structure of the crew.
-
-Goal:
-- Create a 7-day travel itinerary with detailed per-day plans,
-    including budget, packing suggestions, and safety tips.
-
-Captain/Manager/Boss:
-- Expert Travel Agent
-
-Employees/Experts to hire:
-- City Selection Expert 
-- Local Tour Guide
-
-
-Notes:
-- Agents should be results driven and have a clear goal in mind
-- Role is their job title
-- Goals should actionable
-- Backstory should be their resume
-"""
-
-
-
-
-
 from crewai import Agent
 from textwrap import dedent
 from langchain_openai import ChatOpenAI
@@ -86,3 +53,46 @@ class TravelAgents:
             verbose=True,
             llm=self.OpenAIGPT4,
         )
+    
+    #def budget_planner(self):
+        #return Agent(
+            #role="Budget Planner",
+            #backstory=dedent(
+                #"""Specialist in creating travel budgets and finding cost-saving measures for trips."""),
+            #goal=dedent("""
+                        #Develop a comprehensive budget plan covering flights, accommodation, 
+                        #food, local transportation, and activities for the entire trip.
+                        #"""),
+            #tools=[CalculatorTools.calculate, SearchTools.search_internet],
+            #verbose=True,
+            #llm=self.OpenAIGPT4,
+        #)
+
+    #def cultural_enthusiast(self):
+        #return Agent(
+            #role="Cultural Enthusiast",
+            #backstory=dedent(
+                #"""Passionate about local culture and history, providing insights into customs and festivals."""),
+            #goal=dedent("""
+                        #Offer detailed information on local customs, historical sites, and festivals 
+                        #to enrich travelers' understanding and enjoyment.
+                        #"""),
+            #tools=[SearchTools.search_internet],
+            #verbose=True,
+            #llm=self.OpenAIGPT4,
+        #)
+
+    #def transportation_coordinator(self):
+        #return Agent(
+            #role="Transportation Coordinator",
+            #backstory=dedent(
+                #"""Experienced in optimizing travel routes and finding convenient transportation options."""),
+            #goal=dedent("""
+                        #Create an optimized travel route, including flights, local transportation, 
+                        #and transfers between destinations.
+                        #"""),
+            #tools=[SearchTools.search_internet],
+            #verbose=True,
+            #llm=self.OpenAIGPT4,
+        #)
+
