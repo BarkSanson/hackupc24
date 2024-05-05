@@ -1,0 +1,51 @@
+body {
+    background-color: black; /* Fondo negro para todo el cuerpo del documento */
+    color: white; /* Texto en blanco para que contraste con el fondo */
+    font-family: Arial, sans-serif; /* Tipo de letra más legible para formularios */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Altura completa de la ventana de visualización */
+    margin: 0; /* Remueve los márgenes por defecto */
+}
+
+#logo{
+    width: 100px;
+    height: auto;
+}
+
+#logo-cabecera{
+    width: 90%;
+    height: 100px;
+}
+
+form {
+    border: 1px solid white; /* Borde blanco alrededor del formulario */
+    padding: 20px;
+    border-radius: 5px; /* Bordes redondeados */
+}
+input[type="text"], input[type="password"] {
+    margin-top: 10px; /* Margen superior para separar los inputs */
+    width: calc(100% - 22px); /* Ancho total menos el padding */
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+}
+input[type="submit"] {
+    background-color: white; /* Fondo blanco para el botón */
+    color: black; /* Texto negro para el botón */
+    border: none;
+    padding: 10px 15px;
+    margin-top: 20px;
+    cursor: pointer; /* Cursor en forma de mano al pasar sobre el botón */
+    width: 100%;
+    border-radius: 3px;
+}
+input[type="submit"]:hover {
+    background-color: grey; /* Color gris cuando se pasa el mouse sobre el botón */
+}
+
+#logo{
+    width: 50%;
+    height: auto;
+}
