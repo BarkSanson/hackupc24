@@ -1,5 +1,4 @@
 import pandas as pd
-import datetime as dt
     
 #Read the .csv file provided by TravelPerk
 df = pd.read_csv('../../../hackupc-travelperk-dataset.csv')
@@ -9,6 +8,17 @@ df['Return Date'] = pd.to_datetime(df['Return Date'], format="%d/%m/%Y")
 
 
 def getTravelers(date, city):
+    """These function filter the dataframe given by Travelperk wich simulates a fake database
+    of future trips. The filter conditions are the trip dates and the arraival city. It returns
+    a json doc with the users who can match in their final destinations in the same dates.
+
+    Args:
+        date (str): the date of arrival to de destination
+        city (str): the destination city
+
+    Returns:
+        .json: a json file with all the matches
+    """
     global df
     date = pd.to_datetime(date, format="%d/%m/%Y")
     
