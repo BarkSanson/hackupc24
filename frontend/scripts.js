@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch("viajeros.json")
+    fetch("data.json")
         .then(response => response.json())
         .then(data => {
             const tabla = document.getElementById('tabla-viajeros').getElementsByTagName('tbody')[0];

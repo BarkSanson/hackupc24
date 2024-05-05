@@ -1,7 +1,7 @@
 import pandas as pd
     
 #Read the .csv file provided by TravelPerk
-df = pd.read_csv('../../../hackupc-travelperk-dataset.csv')
+df = pd.read_csv('./data/hackupc-travelperk-dataset.csv')
 #Format the date columns
 df['Departure Date'] = pd.to_datetime(df['Departure Date'], format="%d/%m/%Y")
 df['Return Date'] = pd.to_datetime(df['Return Date'], format="%d/%m/%Y")
