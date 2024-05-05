@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+      "target": "es6",
       "strict": true,
       "esModuleInterop": true,
       "module": "commonjs",
@@ -7,9 +8,9 @@
       "removeComments": true,
       "preserveConstEnums": true,
       "sourceMap": true,
-      "outDir": "./build"
+      "outDir": "./dist",
     },
-    "files": [
-        "index.ts"
+    "include": [
+        "src/index.ts"
     ]
   }

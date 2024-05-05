@@ -1,3 +1,0 @@
-type Recommendation = {
-    text: string
-};
