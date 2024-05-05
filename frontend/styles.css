@@ -1,0 +1,47 @@
+body{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+h1{
+    color: #ffffff;
+    font-size: 55px;
+    font-weight: bold;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #999999;
+}
+
+#logo{
+    width: 100px;
+    height: auto;
+}
+#logo-cabecera{
+    width: 90%;
+    height: 100px;
+}
+
+#own-trip{
+    color: #000000;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+#tabla-dias {
+    width: 40%; /* Establece el ancho al 50% de la pantalla */ /* Centra la tabla horizontalmente */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
