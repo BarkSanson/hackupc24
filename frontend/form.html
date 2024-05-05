@@ -2,34 +2,34 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Formulario de Viaje</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="styles2.css">
     <img src="./res/Taleisure.png" id ="logo">
 </head>
 <body>
     <form action="./TravelersList.html" method="POST">
-        <div class="form-group">
-            <label for="departureCity">Ciudad de salida:</label>
-            <input type="text" id="departureCity" name="departureCity" required>
+        <div>
+            <label for="Source">Departure City:</label>
+            <input type="text" id="depCity">
         </div>
-        <div class="form-group">
-            <label for="arrivalCity">Ciudad de destino:</label>
-            <input type="text" id="arrivalCity" name="arrivalCity" required>
+        <div>
+            <label for="Dest"> Arrival City:</label>
+            <input type="text" id="destCity">
         </div>
-        <div class="form-group">
-            <label for="departureDate">Fecha de salida:</label>
-            <input type="date" id="departureDate" name="departureDate" required>
+        <div>
+            <label for="DeptDate">Departure Date:</label>
+            <input type="text" id="depDate">
         </div>
-        <div class="form-group">
-            <label for="returnDate">Fecha de vuelta:</label>
-            <input type="date" id="returnDate" name="returnDate" required>
+        <div>
+            <label for="RetDate">Return date: <label>
+            <input type="text" id="retDate">
         </div>
-        <div class="form-group">
-            <label for="interests">Intereses:</label>
-            <textarea id="interests" name="interests"></textarea>
+        <div>
+            <label for="Interests">Interests:</label>
+            <input type="text" id="Interests;">
         </div>
-        <div class="form-group">
-            <input type="submit" value="Enviar">
+        <div>
+            <input type="submit" value="Send">
         </div>
     </form>
 </body>

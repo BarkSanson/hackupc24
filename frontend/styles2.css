@@ -1,60 +1,67 @@
-#logo{
-    width: 300x;
-    height: auto;
-}ç
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #000; /* Fondo negro */
+    color: white;
     margin: 0;
-    padding: 0;
+    height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100vh; /* Altura completa de la vista del navegador */
+    justify-content: center;
+}
+
+.content {
+    width: 400px;
+    padding: 20px;
+    background: #333; /* Fondo más oscuro para el contenido */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
 }
 
 form {
-    background-color: #fff;
-    padding: 40px; /* Aumentamos el padding para dar más espacio dentro del formulario */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    width: 50%; /* Hacemos que el formulario ocupe el 50% del ancho de la pantalla */
-    max-width: 600px; /* Establecemos un máximo para que no se vuelva demasiado grande en pantallas anchas */
+    display: flex;
+    flex-direction: column;
 }
 
 .form-group {
-    margin-bottom: 20px; /* Espacio entre los campos del formulario */
+    margin-bottom: 10px;
 }
 
 label {
-    display: block;
-    margin-bottom: 5px; /* Espacio entre la etiqueta y el campo de entrada */
+    margin-bottom: 5px;
 }
 
 input[type="text"],
 input[type="date"],
 input[type="submit"],
 textarea {
-    width: 100%; /* Los campos ocupan todo el ancho disponible del formulario */
-    padding: 10px; /* Mayor padding para mayor comodidad al teclear */
-    box-sizing: border-box; /* El ancho incluye el padding y el borde */
-    border: 1px solid #ccc;
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
     border-radius: 4px;
+    border: none;
+    background: #fff;
+    color: #333;
 }
 
 input[type="submit"] {
     background-color: #007BFF;
     color: white;
-    border: none;
     cursor: pointer;
+    border: none;
 }
 
 input[type="submit"]:hover {
-    background-color: #0056b3; /* Un tono más oscuro para el hover */
+    background-color: #0056b3;
 }
 
 textarea {
-    height: 100px; /* Tamaño inicial para el área de texto */
-    resize: vertical; /* Permite al usuario ajustar la altura del área de texto */
+    resize: vertical;
+    height: 80px;
 }
+
+#logo {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 100%; /* Ajusta el tamaño del logo */
+}
+
